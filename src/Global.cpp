@@ -1,11 +1,4 @@
 #include "Global.h"
-
-Global::Global()
-{
-    //ctor
-}
-
-Global::~Global()
-{
-    //dtor
-}
+vector<ErrorInfo> ErrorProcess;         //error table
+CState State;                           //resources' states
+vector<CToken> *pTokenList;           //

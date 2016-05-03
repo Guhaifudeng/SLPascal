@@ -1,8 +1,10 @@
-#ifndef STATE_H
-#define STATE_H
+#ifndef CSTATE_H
+#define CSTATE_H
+#include "Afx.h"
+#include "ErrorProc.h"
+using namespace std;
 
-
-class State
+class CState
 {
 
     public:
@@ -20,16 +22,15 @@ class State
             m_szSourceFile = "";
             m_szSysDir = "";
             m_szOutputFile = "";
-            m_szSysLib = "";
+            //m_szSysLib = "";
             //m_szUserLib = "";
-            //m_szErrFile = "";
+            m_szErrFile = "";
             m_bOpti = false;
         };
-        virtual ~State();
         bool CommandInit(int argc, char** argv);
     protected:
     private:
 
 };
 
-#endif // STATE_H
+#endif // CSTATE_H

@@ -1,9 +1,15 @@
-#include <iostream>
 #include "Afx.h"
+#include "State.h"
 using namespace std;
-
-int main(int argc, char** argv)
+extern CState State;
+int main(int argc,char** argv)
 {
-    cout << "Hello world!" << endl;
+    if(!State.CommandInit(argc,argv))
+    {
+        PrintError();
+        //return 0;
+    }
+
+    cout << "\nHello world!" << endl;
     return 0;
 }

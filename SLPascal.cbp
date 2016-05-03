@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -33,16 +35,20 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Afx.h" />
-		<Unit filename="include/Error.h" />
+		<Unit filename="include/CommonLib.h" />
+		<Unit filename="include/ErrorProc.h" />
 		<Unit filename="include/Global.h" />
 		<Unit filename="include/Lex.h" />
+		<Unit filename="include/ScanGen.h" />
 		<Unit filename="include/State.h" />
 		<Unit filename="include/Structure.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Afx.cpp" />
-		<Unit filename="src/Error.cpp" />
+		<Unit filename="src/CommonLib.cpp" />
+		<Unit filename="src/ErrorProc.cpp" />
 		<Unit filename="src/Global.cpp" />
 		<Unit filename="src/Lex.cpp" />
+		<Unit filename="src/ScanGen.cpp" />
 		<Unit filename="src/State.cpp" />
 		<Unit filename="src/Structure.cpp" />
 		<Extensions>
